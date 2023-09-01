@@ -17,15 +17,17 @@ public class Main {
 
         System.out.println("Type the Fahrenheit number to convert.");
 
-        int fahrenheit = sc.nextInt();
+        double fahrenheit = sc.nextDouble();
 
-        int celsius = (fahrenheit - 32) * (5 / 9);
+        double celsius = (fahrenheit - 32) * ((double) 5 / 9);
 
-        System.out.println("That number in Celsius is " + celsius);
+        double kelvin = (celsius + 273.15);
 
-        int kelvin = (int) (celsius + 273.15);
+        System.out.println("That number is equal to " + celsius + " Celsius.");
 
-        System.out.println("That number in Kelvin is " + kelvin);
+        System.out.println("That number is equal to " + kelvin + " Kelvin.");
+
+        
 
 
     }
